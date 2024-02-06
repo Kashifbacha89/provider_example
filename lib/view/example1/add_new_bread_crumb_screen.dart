@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_example/controllers/bread_crum_provider.dart';
 import 'package:provider_example/helper/bread_crumb.dart';
+
+import '../../providers/bread_crum_provider.dart';
 class AddNewBreadCrumbScreen extends StatefulWidget {
   const AddNewBreadCrumbScreen({Key? key}) : super(key: key);
 
