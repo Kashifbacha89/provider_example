@@ -11,7 +11,10 @@ class BreadCrumbWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Wrap(
       children: breadCrumbs.map((breadCrumb) {
-        return Text(breadCrumb.title,style: TextStyle(
+        return Text(breadCrumb.title,
+          style: TextStyle(
+            fontSize: 16,
+          fontWeight: FontWeight.w600,
           color: breadCrumb.isActive?Colors.blue:Colors.black87
         ),);
 

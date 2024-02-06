@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider_example/controllers/bread_crum_provider.dart';
+import 'package:provider_example/view/add_new_bread_crumb_screen.dart';
 import 'package:provider_example/view/home_screen.dart';
 import 'package:provider/provider.dart';
 
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       ),
       home: const HomeScreen(),
       routes: {
-        '/new':(context)=>const Material(),
+        '/new':(context)=>const AddNewBreadCrumbScreen(),
       },
     );
   }
