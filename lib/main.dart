@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
       home: const Example1HomeScreen(),
       routes: {
         '/new':(context)=>const AddNewBreadCrumbScreen(),
-        'example2':(context)=>const E2HomeScreen(),
+        '/example2':(context)=>const E2HomeScreen(),
       },
     );
   }

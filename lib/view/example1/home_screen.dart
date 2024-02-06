@@ -54,14 +54,19 @@ class _Example1HomeScreenState extends State<Example1HomeScreen> {
                       fontSize: 12,
                       fontWeight: FontWeight.w600),
                 )),
-            Container(
-              width: 400,
-              height: 50,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                color: Colors.blue.shade500,
+            InkWell(
+              onTap: (){
+                Navigator.pushNamed(context, '/example2');
+              },
+              child: Container(
+                width: 400,
+                height: 50,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  color: Colors.blue.shade500,
+                ),
+                child: const Center(child: Text('Check Example 2',style: TextStyle(fontSize: 16,color: Colors.white,fontWeight: FontWeight.w600),),),
               ),
-              child: const Center(child: Text('Check Example 2',style: TextStyle(fontSize: 16,color: Colors.white,fontWeight: FontWeight.w600),),),
             )
           ],
         ),
