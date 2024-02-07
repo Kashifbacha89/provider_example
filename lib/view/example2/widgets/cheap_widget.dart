@@ -10,14 +10,18 @@ class CheapWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final cheapObject=context.select<ObjectProvider,CheapObject>((provider)=>provider.cheapObject,);
     return Container(
-      height: 100,
-      color: Colors.redAccent,
-      child: Column(
-        children: [
-          const Text('Cheap Widget'),
-          const Text('Last Update'),
-          Text(cheapObject.lastUpdated!.toString())
-        ],
+      height: 120,
+      color: Colors.yellow.shade500,
+      child: Padding(
+        padding: const EdgeInsets.all(4),
+        child: Column(
+          children: [
+            const Text('Cheap Widget'),
+            const Text('Last Update'),
+            const SizedBox(height: 10,),
+            Text(cheapObject.lastUpdated!.toString(),style: const TextStyle(fontSize: 12,fontWeight: FontWeight.w600),)
+          ],
+        ),
       ),
     );
   }

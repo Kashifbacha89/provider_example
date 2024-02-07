@@ -10,14 +10,18 @@ class ExpansiveWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final expansiveObject=context.select<ObjectProvider,ExpansiveObject>((provider)=>provider.expansiveObject,);
     return  Container(
-      height: 100,
-      color: Colors.blue,
-      child: Column(
-        children: [
-          const Text('Expansive Widget'),
-          const Text('Last Updated'),
-          Text(expansiveObject.lastUpdated!.toString()),
-        ],
+      height: 120,
+      color: Colors.redAccent.shade100,
+      child: Padding(
+        padding: const EdgeInsets.all(4.0),
+        child: Column(
+          children: [
+            const Text('Expansive Widget'),
+            const Text('Last Updated'),
+            const SizedBox(height: 10,),
+            Text(expansiveObject.lastUpdated!.toString(),style: const TextStyle(fontSize: 12,fontWeight: FontWeight.w600),),
+          ],
+        ),
       ),
     );
   }

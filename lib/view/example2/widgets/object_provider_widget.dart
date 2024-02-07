@@ -8,8 +8,8 @@ class ObjectProviderWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final provider=context.watch<ObjectProvider>();
     return  Container(
-      height: 100,
-      color: Colors.redAccent,
+      height: 120,
+      color: Colors.green.shade300,
       child: Column(
         children: [
           const Text('Object Provider Widget'),

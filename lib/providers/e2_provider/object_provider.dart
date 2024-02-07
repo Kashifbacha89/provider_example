@@ -18,7 +18,9 @@ class ObjectProvider extends ChangeNotifier {
   ObjectProvider()
       : id = const Uuid().v4(),
         _cheapObject = CheapObject(),
-        _expansiveObject = ExpansiveObject();
+        _expansiveObject = ExpansiveObject(){
+    start();
+  }
 
   @override
   void notifyListeners(){
